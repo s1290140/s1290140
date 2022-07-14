@@ -1,4 +1,4 @@
-import java.util.Random;
+import java.util.*;
 
 public class Heads_or_Tails {
     public static void main(String[] args) {
@@ -6,6 +6,13 @@ public class Heads_or_Tails {
         Random r = new Random();
         int round = 1;
         int[] count = { 0, 0 };
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Who are you?");
+        System.out.print("> ");
+        String name = sc.next();
+        System.out.println("Hello, " + name + "!");
 
         System.out.println("Tossing a coin...");
         for (int i = 0; i < 3; i++) {
