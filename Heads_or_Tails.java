@@ -7,13 +7,6 @@ public class Heads_or_Tails {
         int round = 1;
         int[] count = { 0, 0 };
 
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Who are you?");
-        System.out.print("> ");
-        String name = sc.next();
-        System.out.println("Hello, " + name + "!");
-
         System.out.println("Tossing a coin...");
         for (int i = 0; i < 3; i++) {
             String hot = HoT[r.nextInt(2)];
@@ -27,10 +20,5 @@ public class Heads_or_Tails {
         }
 
         System.out.println("Heads: " + count[0] + ", Tails: " + count[1]);
-
-        if (count[0] > count[1])
-            System.out.println("You won!");
-        else
-            System.out.println("You lost!");
     }
 }
